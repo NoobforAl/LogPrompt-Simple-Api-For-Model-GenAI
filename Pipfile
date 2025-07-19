@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "==0.115.5"
+uvicorn = {extras = ["standard"], version = "==0.32.1"}
+transformers = "==4.47.1"
+torch = "==2.7.1"
+tokenizers = "==0.21.0"
+requests = "==2.32.3"
+pydantic = "==2.10.3"
+tqdm = "*"
+types-requests = "*"
+httpx = "==0.26.0"
+
+[dev-packages]
+pytest = "==7.4.4"
+black = "==23.12.1"
+flake8 = "==7.0.0"
+mypy = "==1.8.0"
+autopep8 = "==2.0.4"
+pre-commit = "==3.6.0"
+types-requests = "==2.32.4.20250611"
+types-tqdm = "*"
+
+[requires]
+python_version = "3.12"
